@@ -1,0 +1,5 @@
+---
+# Whether to remove all users that are not "admin"
+purge_users: no
+#If purging, tell Ansible what the primary user to keep is
+primary_user: "admin"

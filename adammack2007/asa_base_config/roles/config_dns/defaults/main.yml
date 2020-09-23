@@ -1,0 +1,7 @@
+dns_servers:
+  - 192.168.6.3
+  - 192.168.6.4
+
+dns_source_interface: management
+
+enforce_compliance: no

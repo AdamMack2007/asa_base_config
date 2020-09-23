@@ -1,0 +1,7 @@
+---
+asa_failover_port: GigabitEthernet0/6
+asa_failover_key: ""
+
+asa_failover_ip_pri: 10.255.255.1
+asa_failover_ip_subnet: 255.255.255.252
+asa_failover_ip_sec: 10.255.255.2

@@ -1,0 +1,28 @@
+interface {{ asa_failover_port }}
+  no shut
+
+{% if ha_primary %}
+failover lan interface failover {{ asa_failover_port }}
+failover interface ip failover {{ asa_failover_ip_pri }} {{ asa_failover_ip_subnet }} standby {{ asa_failover_ip_sec }}
+{% if asa_failover_key %}
+failover lan key {{ asa_failover_key }}
+{% endif %}
+failover lan unit primary
+failover
+failover link failover {{ asa_failover_port }}
+
+failover poll 1 hol 3
+failover poll interface 3
+interface {{ asa_failover_port }}
+failover poll interface 3
+
+{% else %}
+failover lan interface failover {{ asa_failover_port }}
+failover interface ip failover {{ asa_failover_ip_pri }} {{ asa_failover_ip_subnet }} standby {{ asa_failover_ip_sec }}
+{% if asa_failover_key %}
+failover lan key {{ asa_failover_key }}
+{% endif %}
+failover lan unit secondary
+failover
+failover link failover {{ asa_failover_port }}
+{% endif %}

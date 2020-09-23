@@ -1,0 +1,7 @@
+snmp-server enable
+snmp-server group {{ snmp_group }} v3 auth
+snmp-server user {{ snmp_user }} {{ snmp_group }} v3 auth sha {{ snmp_password }}
+snmp-server enable traps all
+{% for server in snmp_servers %}
+snmp-server host {{ syslog_source_interface }} {{ server }} version 3 {{ snmp_user }}
+{% endfor %}

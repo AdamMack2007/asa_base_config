@@ -1,0 +1,18 @@
+namespace: adammack2007
+name: asa_base_config
+version: 1.0.0
+
+readme: README.md
+
+authors:
+  - Adam Mack - adammack2007@gmail.com
+description: Collection of Cisco ASA network roles to perform a base configuration of the device.
+
+license:
+  - GPL-2.0-or-later
+
+tags: ["cisco", "network", "asa"]
+
+repository: https://github.com/AdamMack2007/asa_base_configuration
+
+documentation: https://github.com/AdamMack2007/asa_base_configuration/blob/master/README.md

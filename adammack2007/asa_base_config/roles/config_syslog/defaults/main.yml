@@ -1,0 +1,11 @@
+syslog_servers:
+  - 192.168.10.133
+syslog_port: 5514
+
+#Other option is tcp
+syslog_protocol: udp
+
+#Enables TLS encryption when
+syslog_secure: no
+
+enforce_compliance: no

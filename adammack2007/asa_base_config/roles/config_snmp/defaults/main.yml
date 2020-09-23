@@ -1,0 +1,8 @@
+snmp_servers:
+  - 192.168.10.152
+
+snmp_group: "SNMP_V3"
+snmp_user: "librenms"
+snmp_password: "librenms"
+
+snmp_source_interface: "management"

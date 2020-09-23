@@ -1,0 +1,8 @@
+ntp_servers:
+  - 132.163.96.5
+  - 132.163.97.5
+  - 132.163.98.5
+
+ntp_source_interface: "management"
+
+enforce_compliance: no

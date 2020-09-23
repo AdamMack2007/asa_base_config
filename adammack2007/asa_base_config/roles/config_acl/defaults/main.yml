@@ -1,0 +1,6 @@
+---
+ssh_allowed_subnets:
+  - network: 192.168.6.0 255.255.255.0
+    interface: management
+  - network: 192.168.10.0 255.255.255.0
+    interface: management
