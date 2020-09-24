@@ -1,6 +1,6 @@
 namespace: adammack2007
 name: asa_base_config
-version: 1.0.0
+version: 1.0.1
 
 readme: README.md
 
@@ -13,6 +13,6 @@ license:
 
 tags: ["cisco", "network", "asa"]
 
-repository: https://github.com/AdamMack2007/asa_base_configuration
+repository: https://github.com/AdamMack2007/asa_base_config
 
-documentation: https://github.com/AdamMack2007/asa_base_configuration/blob/master/README.md
+documentation: https://github.com/AdamMack2007/asa_base_config/blob/master/adammack2007/asa_base_config/README.md
